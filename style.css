@@ -28,6 +28,10 @@ body {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex; 
+  flex-direction: column; 
+  gap: 20px; 
+
 }
 
 a {
@@ -40,7 +44,7 @@ a:hover {
   color: #a8cfff;
 }
 
-#btn-siwg {
+button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,44 +53,26 @@ a:hover {
   background-color: #1e1e1e;
   color: #f0f0f0;
   border: 1px solid #3c3c3c;
-  transition: background-color 0.25s, transform 0.1s ease;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s, transform 0.1s ease;
 }
 
-#btn-siwg img {
+button img {
   height: 30px;
   object-fit: contain;
 }
 
 /* Hover Effect */
-#btn-siwg:hover {
+button:hover {
   background-color: #2a2a2a;
   border-color: #8ab4f8;
 }
 
 /* Active/Press Effect */
-#btn-siwg:active {
-  background-color: #333333;
-  transform: scale(0.98); /* Slight press effect */
-}
-
-/* Button Styles */
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  color: #f0f0f0;
-  cursor: pointer;
-  transition: border-color 0.25s, background-color 0.25s, transform 0.1s ease;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
 button:active {
   background-color: #333333;
   transform: scale(0.98); /* Slight press effect */
@@ -128,18 +114,18 @@ button:focus-visible {
     transform: scale(0.98); /* Slight press effect */
   }
 
-  #btn-siwg {
+  #btn-custom {
     background-color: #ffffff;
     color: #1a1a1a;
     border: 1px solid #9d9d9d;
   }
 
-  #btn-siwg:hover {
+  #btn-custom:hover {
     background-color: #e0e0e0;
     border-color: #747bff;
   }
 
-  #btn-siwg:active {
+  #btn-custom:active {
     background-color: #d0d0d0;
     transform: scale(0.98); /* Slight press effect */
   }
